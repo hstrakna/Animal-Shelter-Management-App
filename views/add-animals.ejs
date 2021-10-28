@@ -1,0 +1,111 @@
+
+
+<%- include('partials/header'); -%>
+
+
+<h3>Add Animal:</h3><br>
+<div class="container form-entry-container">
+  <div class="row">
+    <div class="col">
+
+      <form action="/addanimals" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" maxlength="45" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="exampleSelect1">Gender</label>
+          <select class="form-control" id="sex" name="sex">
+            <option>M</option>
+            <option>F</option>
+          </select>
+        </div>
+
+        <!-- Birthday -->
+        <div class="form-group">
+          <label for="example-date-input">Birthday:</label>
+          <input class="form-control" type="date" value="2011-08-19" id="bday" name="bday">
+        </div>
+
+        <!-- Species -->
+        <div class="form-group">
+          <label for="exampleSelect1">Species</label>
+          <select class="form-control" id="species" name="species" required>
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!-- Weight -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Weight:</label>
+          <input type="text" class="form-control" id="weight" name="weight" maxlength="4">
+        </div>
+
+        <!-- color -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Color:</label>
+          <input type="text" class="form-control" id="color" name="color" maxlength="45" required>
+        </div>
+
+        <!-- Breed -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Breed:</label>
+          <input type="text" class="form-control" id="breed" name="breed" maxlength="45" required>
+        </div>
+
+        <!-- Entry date -->
+        <div class="form-group">
+          <label for="example-date-input">Entry Date:</label>
+          <input class="form-control" type="date" value="2011-08-19" id="entry_date" name="entry_date" required>
+        </div>
+
+        <!-- Species -->
+        <div class="form-group">
+          <label for="exampleSelect1">Likes Cats:</label>
+          <select class="form-control" id="likes_cats" name="likes_cats">
+            <option>y</option>
+            <option>n</option>
+          </select>
+        </div>
+
+        <!-- Species -->
+        <div class="form-group">
+          <label for="exampleSelect1">Likes Dogs:</label>
+          <select class="form-control" id="likes_dogs" name="likes_dogs">
+            <option>y</option>
+            <option>n</option>
+          </select>
+        </div>
+
+        <!-- Species -->
+        <div class="form-group">
+          <label for="exampleSelect1">Likes Kids:</label>
+          <select class="form-control" id="likes_kids" name="likes_kids">
+            <option>y</option>
+            <option>n</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="modalButton">Submit</button>
+      </form>
+
+
+    </div>
+    <div class="col">
+
+    </div>
+
+  </div>
+
+  <br><br>
+
+<!-- SSN -->
+
+
+
+
+
+<%- include('partials/footer'); -%>

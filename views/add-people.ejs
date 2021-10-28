@@ -1,0 +1,121 @@
+
+
+<%- include('partials/header'); -%>
+
+
+<h3>Add Person:</h3><br>
+<div class="container form-entry-container">
+  <div class="row">
+    <div class="col">
+
+      <form action="/addpeople" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">SSN:</label>
+          <input type="text" class="form-control" id="ssn" name="ssn" placeholder="000000000" maxlength="9" required>
+
+        </div>
+
+        <!-- First name -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">First Name:</label>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Jane" maxlength="45" required>
+        </div>
+
+        <!-- Last name -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Last Name:</label>
+          <input type="text" class="form-control" id="lname" name="lname" placeholder="Doe" maxlength="45" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label for="exampleSelect1">Gender</label>
+          <select class="form-control" id="sex" name="sex">
+            <option>M</option>
+            <option>F</option>
+            <option>O</option>
+          </select>
+        </div>
+
+        <!-- Phone -->
+      <div class="form-group">
+        <label for="example-tel-input">Telephone</label>
+
+          <input class="form-control" type="tel" value="(555)-555-5555" id="phone" name="phone" maxlength="10" required>
+
+      </div>
+
+      <!-- Num Kids -->
+      <div class="form-group">
+        <label for="exampleSelect1">Number of Kids:</label>
+        <select class="form-control" id="num_kids" name="num_kids">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>+
+        </select>
+      </div>
+
+      <!-- Num Cats -->
+      <div class="form-group">
+        <label for="exampleSelect1">Number of Cats:</label>
+        <select class="form-control" id="num_cats" name="num_cats">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+
+      <!-- Num Dogs -->
+      <div class="form-group">
+        <label for="exampleSelect1">Number of Dogs:</label>
+        <select class="form-control" id="num_dogs" name="num_dogs">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>+
+        </select>
+      </div>
+
+
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="example-email-input">Email:</label>
+        <input class="form-control" type="email" value="bootstrap@example.com" id="email" name="email" maxlength="45">
+      </div>
+
+      <!-- Birthday -->
+      <div class="form-group">
+        <label for="example-date-input">Birthday</label>
+        <input class="form-control" type="date" value="2011-08-19" id="bday" name="bday">
+      </div>
+
+
+        <button type="submit" class="btn btn-primary" id="modalButton">Submit</button>
+      </form>
+
+
+    </div>
+    <div class="col">
+
+    </div>
+
+  </div>
+
+  <br><br>
+
+<!-- SSN -->
+
+
+
+
+
+<%- include('partials/footer'); -%>

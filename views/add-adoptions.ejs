@@ -1,0 +1,64 @@
+
+
+<%- include('partials/header'); -%>
+
+
+<h3>Process Adoption:</h3><br>
+<div class="container form-entry-container">
+  <div class="row">
+    <div class="col">
+
+      <form action="/addadoption" method="POST">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Person's SSN:</label>
+          <input type="text" class="form-control" id="Person_ssn" name="Person_ssn" placeholder="000000000" maxlength="9" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Animal ID:</label>
+          <input type="text" class="form-control" id="Animal_id" name="Animal_id" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Animal's Name:</label>
+          <input type="text" class="form-control" id="Animal_name" name="Animal_name" maxlength="45" required>
+        </div>
+
+        <!-- First name -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Person's First Name:</label>
+          <input type="text" class="form-control" id="Person_fname" name="Person_fname" placeholder="Jane" maxlength="45" required>
+        </div>
+
+        <!-- Last name -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Person's Last Name:</label>
+          <input type="text" class="form-control" id="Person_lname" name="Person_lname" placeholder="Doe" maxlength="45" required>
+        </div>
+
+      <!-- Adoptions date -->
+      <div class="form-group">
+        <label for="example-date-input">Adoption Date:</label>
+        <input class="form-control" type="date" value="2021-05-13" id="Adoption_date" name="Adoption_date" required>
+      </div>
+
+        <button type="submit" class="btn btn-primary" id="modalButton">Submit</button>
+      </form>
+
+
+    </div>
+    <div class="col">
+
+    </div>
+
+  </div>
+
+  <br><br>
+
+<!-- SSN -->
+
+
+
+
+
+<%- include('partials/footer'); -%>

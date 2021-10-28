@@ -1,0 +1,41 @@
+<%- include('partials/header'); -%>
+<h3>Animals Currently in the Shelter:</h3>
+
+<div class="container form-entry-container">
+  <div class="row">
+    <div class="col">
+<table class="table table-hover">
+  <thead>
+    <tr>
+
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Bday</th>
+      <th scope="col">Species</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Color</th>
+      <th scope="col">Breed</th>
+      <th scope="col">Entry Date</th>
+      <th scope="col">Likes Cats</th>
+      <th scope="col">Likes Dogs</th>
+      <th scope="col">Likes Kids</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(var i=0; i<query.length; i++) {%>
+      <tr>
+
+      <% for(var j=0; j<query[0].length; j++) {%>
+          <td><%= query[i][j]%></td>
+      <% } %>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+</div>
+<div class="col">
+</div>
+</div>
+<%- include('partials/footer'); -%>

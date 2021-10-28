@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+
+<h3>Add Animal</h3>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(var i=0; i<query.length; i++) {%>
+      <tr>
+        <td><%= i+1 %></td>
+      <% for(var j=0; j<query[0].length; j++) {%>
+          <td><%= query[i][j]%></td>
+      <% } %>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+<%- include('partials/footer'); -%>

@@ -1,0 +1,45 @@
+<%- include('partials/header'); -%>
+<h3>People Looking to Adopt:</h3>
+
+<div class="container form-entry-container">
+  <div class="row">
+    <div class="col">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">SSN</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Phone</th>
+      <th scope="col"># of Kids</th>
+      <th scope="col"># of Cats</th>
+      <th scope="col"># of Dogs</th>
+      <th scope="col">Email</th>
+      <th scope="col">Bday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(var i=0; i<query.length; i++) {%>
+      <tr>
+        <td><%= i+1 %></td>
+      <% for(var j=0; j<query[0].length; j++) {%>
+          <td><%= query[i][j]%></td>
+      <% } %>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+</div>
+<div class="col">
+
+</div>
+
+</div>
+
+
+
+
+<%- include('partials/footer'); -%>
