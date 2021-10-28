@@ -1,0 +1,12 @@
+body {
+  background-image: url("/images/dogandcat2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  color: #3d3d3d
+}
+
+.form-entry-containter {
+  margin-left: 100px;
+  color: blue;
+}
